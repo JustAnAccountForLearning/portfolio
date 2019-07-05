@@ -8,7 +8,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"/>
 
         <!-- Alternative themes at https://bootswatch.com -->
-        <link href="https://bootswatch.com/4/sandstone/bootstrap.min.css" rel="stylesheet"/>
+        <link href="https://bootswatch.com/4/darkly/bootstrap.min.css" rel="stylesheet"/>
 
         <link href="/static/styles.css" rel="stylesheet"/>
 
@@ -16,13 +16,39 @@
         <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js"></script>
         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js"></script>
 
+        <!-- Fonts from https://fonts.google.com -->
+        <link href="https://fonts.googleapis.com/css?family=Russo+One&display=swap" rel="stylesheet">
 
         <title> Portfolio: {% block title %} {% endblock %} </title>
     </head>
 
     <body>
+        <nav class="navbar navbar-fixed-top navbar-expand-md navbar-dark bg-primary">
+            <a class="navbar-brand" href="#">Portfolio</a>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="nav navbar-nav mr-auto">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="/index">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/about">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/projects">Projects</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Contact</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+
+
         {% block main %}
 
         {% endblock %}
     </body>
+    <footer>
+        <p>TODO: Add appropriate footer. Maybe with disclaimers about content.</p>
+    </footer>
 </html>
