@@ -8,17 +8,21 @@
         <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"/>
 
         <!-- Alternative themes at https://bootswatch.com -->
-        <link href="https://bootswatch.com/4/darkly/bootstrap.min.css" rel="stylesheet"/>
+        <link href="https://bootswatch.com/4/flatly/bootstrap.min.css" rel="stylesheet"/>
 
+        <!-- Route to local CSS stylesheet -->
         <link href="/static/styles.css" rel="stylesheet"/>
 
+        <!-- Up to date jQuery and, AJAX, and Bootstrap -->
         <script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js"></script>
         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js"></script>
 
         <!-- Fonts from https://fonts.google.com -->
-        <link href="https://fonts.googleapis.com/css?family=Russo+One&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Viga&display=swap" rel="stylesheet">
 
+
+        <!-- TITLEBLOCK -->
         <title> Portfolio: {% block title %} {% endblock %} </title>
     </head>
 
@@ -43,7 +47,7 @@
             </div>
         </nav>
 
-
+    
         {% block main %}
 
         {% endblock %}
