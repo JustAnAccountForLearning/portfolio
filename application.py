@@ -1,7 +1,7 @@
 import os
 from flask import Flask, render_template
 
-application = Flask(__name__)
+application = Flask(__name__, static_url_path="/static")
 
 
 @application.route('/')
@@ -19,7 +19,7 @@ def about():
 def projects():
     return render_template("projects.html")
 
-    
+
 
 if __name__ == '__main__':
     application.debug = True
