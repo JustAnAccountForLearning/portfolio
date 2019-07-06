@@ -2,8 +2,12 @@ body, html {
     height: 100%;
 }
 
-h1, h4 {
+h1, h3, h4 {
     font-family: 'Viga', sans-serif;
+}
+
+p {
+    float: left, right;
 }
 
 footer {
@@ -25,9 +29,19 @@ footer {
 .portrait {
     border-radius: 15px;
     float: left;
-    padding:8px;
+    padding: 8px;
     width: 250px;
     transform: rotate(90deg);
+}
+
+.images {
+    border-radius: 6px;
+    border-width: 1px;
+    border-style: solid;
+    border-color:black;
+    float: left, right;
+    padding: 8px;
+    height: 175px;
 }
 
 .content {
