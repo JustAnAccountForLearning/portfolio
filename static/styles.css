@@ -18,6 +18,11 @@ footer {
     background-color: #142B32;
     color: white;
 }
+
+.btn-space {
+    margin:3px;
+}
+
 .bg {
     background-image: url('/static/images/noseroll.jpg');
     height: 100% !important;
