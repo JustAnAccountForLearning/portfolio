@@ -1,5 +1,16 @@
-body, html {
-    height: 100%;
+html {
+    position: relative;
+    min-height: 100%;
+}
+
+body {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+main {
+    flex-grow: 1;
 }
 
 h1, h3, h4 {
@@ -11,6 +22,8 @@ p {
 }
 
 footer {
+    flex-grow: 0;
+    display: block;
     padding-right: 10%;
     padding-left: 7%;
     padding-top: 8px;
@@ -54,4 +67,29 @@ footer {
     padding-left: 10%;
     padding-top: 60px;
     padding-bottom: 100px;
+}
+
+.footer {
+    position: absolute;
+    left: 0; right: 0; bottom: 0;
+    width: 100%;
+    height: 133px;
+}
+
+.box {
+    display: inline-block;
+    position: relative;
+    width: 100%;
+}
+
+.dummy {
+    margin-top: 57%;
+}
+
+.fullscreen {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
 }

@@ -3,90 +3,87 @@
 {% block title %} Projects {% endblock %}
 
 {% block main %}
-<div class="content containter-fluid">
 
-    <div class="row">
-        <h3>Personal Projects:</h3>
-    </div>
-    <div class="row">
-        <p>
-            All projects below are a work in progress. They have been a learning experience for me
-            while I try to develop my skills. 
-        </p>
-    </div>  
-    <div class="row">
-        <div class="col-md-4">
-            <div class="card mb-3 text-white bg-secondary">
-                <h4 class="card-header"><a id="snake_game"></a>Snake Game</h4>
-                <div class="card-body">
-                    <div>
-                        <img class="card-img-top" src="/static/images/snake01.png" alt="Game Image">
-                        
+    <div class="content container-fluid">
+        <div class="card mb-3 border-primary">
+            <div class="card-body">
+                <h4 class="card-header">Personal Projects:</h4> 
+                <div class="card-body row">
+                    <div class="col-md-4">
+                        <div class="card mb-3 text-white bg-secondary">
+                            <h4 class="card-header"><a id="snake_game"></a>Snake Game</h4>
+                            <div class="card-body">
+                                <div>
+                                    <img class="card-img-top" src="/static/images/snake01.png" alt="Game Image">
+                                    
+                                </div>
+                                <p class="card-text">
+                                    This was my first real personal project. The goal was to learn JavaScript and 
+                                    create something fun to share with friends. This has also been my testing ground 
+                                    for working with new features because of the extremely simple program outside of the 
+                                    the game itself. This is where I started playing with migrating databases from local
+                                    to a web hosted MySQL. 
+                                </p>
+                            </div>
+                            <div class="card-footer">
+                                <form>
+                                    <button type="submit" class="btn btn-space btn-primary btn-sm" formaction="http://snake-env.uctpsrks7z.us-east-2.elasticbeanstalk.com/">View Website</button>
+                                    <button type="submit" class="btn btn-space btn-primary btn-sm" formaction="https://github.com/JustAnAccountForLearning/snake-game">Github Repository</button>
+                                </form>
+                            </div>
+                        </div>
                     </div>
-                    <p class="card-text">
-                        This was my first real personal project. The goal was to learn JavaScript and 
-                        create something fun to share with friends. This has also been my testing ground 
-                        for working with new features because of the extremely simple program outside of the 
-                        the game itself. This is where I started playing with migrating databases from local
-                        to a web hosted MySQL. 
-                    </p>
-                </div>
-                <div class="card-footer">
-                    <form>
-                        <button type="submit" class="btn btn-space btn-primary btn-sm" formaction="http://snake-env.uctpsrks7z.us-east-2.elasticbeanstalk.com/">View Website</button>
-                        <button type="submit" class="btn btn-space btn-primary btn-sm" formaction="https://github.com/JustAnAccountForLearning/snake-game">Github Repository</button>
-                    </form>
-                </div>
-            </div>
-        </div>
 
-        <div class="col-md-4">
-            <div class="card mb-3 text-white bg-secondary">
-                <h4 class="card-header"><a id="twitter_map"></a>Twitter Map</h4>
-                <div class="card-body">
-                    <div>
-                        <img class="card-img-top" src="/static/images/twitter_map.png" alt="Twitter Map">
+                    <div class="col-md-4">
+                        <div class="card mb-3 text-white bg-secondary">
+                            <h4 class="card-header"><a id="twitter_map"></a>Twitter Map</h4>
+                            <div class="card-body">
+                                <div>
+                                    <img class="card-img-top" src="/static/images/twitter_map.png" alt="Twitter Map">
+                                </div>
+                                <p class="card-text">
+                                    Work with a team to develop a visualization for Tweets through the USA. Source tweets 
+                                    through a 1% hose and formatted using Bing’s geocoding API. Tags can be selected by 
+                                    the user from a database propagated list. Tweets are then mapped using D3.js on a map 
+                                    of the USA with the ability to hover to view content. A graph showing sentiment 
+                                    analysis of the tweets is also displayed.
+                                </p>
+                            </div>
+                            <div class="card-footer">
+                                <form>
+                                    <button type="submit" class="btn btn-space btn-primary btn-sm" formaction="http://twitter-map-env.vqmz3jvgef.us-east-1.elasticbeanstalk.com/">View Website</button>
+                                    <button type="submit" class="btn btn-space btn-primary btn-sm" formaction="https://github.com/JustAnAccountForLearning/twitter-map">Github Repository</button>
+                                </form>
+                            </div>
+                        </div>
                     </div>
-                    <p class="card-text">
-                        Work with a team to develop a visualization for Tweets through the USA. Source tweets 
-                        through a 1% hose and formatted using Bing’s geocoding API. Tags can be selected by 
-                        the user from a database propagated list. Tweets are then mapped using D3.js on a map 
-                        of the USA with the ability to hover to view content. A graph showing sentiment 
-                        analysis of the tweets is also displayed.
-                    </p>
-                </div>
-                <div class="card-footer">
-                    <form>
-                        <button type="submit" class="btn btn-space btn-primary btn-sm" formaction="http://twitter-map-env.vqmz3jvgef.us-east-1.elasticbeanstalk.com/">View Website</button>
-                        <button type="submit" class="btn btn-space btn-primary btn-sm" formaction="https://github.com/JustAnAccountForLearning/twitter-map">Github Repository</button>
-                    </form>
-                </div>
-            </div>
-        </div>
 
-        <div class="col-md-4">
-            <div class="card mb-3 text-white bg-secondary">   
-                <h4 class="card-header"><a id="ski_intake_form"></a>Ski Intake Form</h4> 
-                <div class="card-body">
-                    <div>
-                        <img class="card-img-top" src="#" alt="Form Image">
+                    <div class="col-md-4">
+                        <div class="card mb-3 text-white bg-secondary">   
+                            <h4 class="card-header"><a id="ski_intake_form"></a>Ski Intake Form</h4> 
+                            <div class="card-body">
+                                <div>
+                                    <img class="card-img-top" src="#" alt="Form Image">
+                                </div>
+                                <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut 
+                                labore et dolore magna aliqua. Sed risus pretium quam vulputate dignissim suspendisse. Felis 
+                                eget nunc lobortis mattis aliquam faucibus purus in massa. Nec dui nunc mattis enim ut tellus. 
+                                Risus nec feugiat in fermentum posuere urna nec tincidunt. Sodales ut eu sem integer vitae. 
+                                Condimentum id venenatis a condimentum vitae sapien pellentesque habitant morbi. Lobortis 
+                                feugiat vivamus at augue eget arcu dictum varius duis. Eleifend quam adipiscing vitae proin 
+                                sagittis nisl rhoncus mattis rhoncus. Sagittis orci a scelerisque purus semper eget. Lorem 
+                                donec massa sapien faucibus et molestie ac. Porta non pulvinar neque laoreet suspendisse. 
+                                Aliquam malesuada bibendum arcu vitae elementum curabitur vitae nunc. Elit at imperdiet dui 
+                                accumsan sit amet nulla facilisi morbi.</p>
+                            </div>
+                            <div class="card-footer">
+                                <form>
+                                    <button type="submit" class="btn btn-space btn-primary btn-sm" formaction="http://intake-form-env.ixc3mpzqtz.us-east-2.elasticbeanstalk.com/">View Website</button>
+                                    <button type="submit" class="btn btn-space btn-primary btn-sm" formaction="https://github.com/JustAnAccountForLearning/ski-intake-form">Github Repository</button>
+                                </form>
+                            </div>
+                        </div>
                     </div>
-                    <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut 
-                    labore et dolore magna aliqua. Sed risus pretium quam vulputate dignissim suspendisse. Felis 
-                    eget nunc lobortis mattis aliquam faucibus purus in massa. Nec dui nunc mattis enim ut tellus. 
-                    Risus nec feugiat in fermentum posuere urna nec tincidunt. Sodales ut eu sem integer vitae. 
-                    Condimentum id venenatis a condimentum vitae sapien pellentesque habitant morbi. Lobortis 
-                    feugiat vivamus at augue eget arcu dictum varius duis. Eleifend quam adipiscing vitae proin 
-                    sagittis nisl rhoncus mattis rhoncus. Sagittis orci a scelerisque purus semper eget. Lorem 
-                    donec massa sapien faucibus et molestie ac. Porta non pulvinar neque laoreet suspendisse. 
-                    Aliquam malesuada bibendum arcu vitae elementum curabitur vitae nunc. Elit at imperdiet dui 
-                    accumsan sit amet nulla facilisi morbi.</p>
-                </div>
-                <div class="card-footer">
-                    <form>
-                        <button type="submit" class="btn btn-space btn-primary btn-sm" formaction="http://intake-form-env.ixc3mpzqtz.us-east-2.elasticbeanstalk.com/">View Website</button>
-                        <button type="submit" class="btn btn-space btn-primary btn-sm" formaction="https://github.com/JustAnAccountForLearning/ski-intake-form">Github Repository</button>
-                    </form>
                 </div>
             </div>
         </div>
