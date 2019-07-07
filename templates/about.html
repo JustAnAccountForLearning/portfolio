@@ -1,13 +1,22 @@
 {% extends "layout.html" %}
 
+{% block scripts %}
+    <script type="text/javascript">
+        $(document).ready(function() {
+            $("#about").addClass('active');
+        });
+    </script>
+{% endblock %}
+
 {% block title %} About {% endblock %}
 
 {% block main %}
 <div class="content">
     <div class="card mb-3 border-primary">
         <div class="card-body">
-            <h4 class="card-header">About Me:</h4>
+            <h3 class="card-header">Thomas Wood</h3>
             <img class="portrait" src="/static/images/portrait.jpg" alt="Self Portrait">
+            <h4 class="card-title">About Me:</h4>
             <p class="card-text">
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut 
                 labore et dolore magna aliqua. Sed risus pretium quam vulputate dignissim suspendisse. Felis 

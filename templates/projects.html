@@ -1,5 +1,13 @@
 {% extends "layout.html" %}
 
+{% block scripts %}
+    <script type="text/javascript">
+        $(document).ready(function() {
+            $("#projects").addClass('active');
+        });
+    </script>
+{% endblock %}
+
 {% block title %} Projects {% endblock %}
 
 {% block main %}
@@ -7,7 +15,7 @@
     <div class="content container-fluid">
         <div class="card mb-3 border-primary">
             <div class="card-body">
-                <h4 class="card-header">Personal Projects:</h4> 
+                <h3 class="card-header">Personal Projects:</h3> 
                 <div class="card-body row">
                     <div class="col-md-4">
                         <div class="card mb-3 text-white bg-secondary">
@@ -20,9 +28,12 @@
                                 <p class="card-text">
                                     This was my first real personal project. The goal was to learn JavaScript and 
                                     create something fun to share with friends. This has also been my testing ground 
-                                    for working with new features because of the extremely simple program outside of the 
-                                    the game itself. This is where I started playing with migrating databases from local
-                                    to a web hosted MySQL. 
+                                    for working with new challenges such as migrating from a local machine 
+                                    app and database to an AWS hosted app through RDS and Elastic Beanstalk. 
+                                </p>
+                                   
+                                <p class="card-text">
+                                    It's simple, but it's fun.
                                 </p>
                             </div>
                             <div class="card-footer">
@@ -42,11 +53,12 @@
                                     <img class="card-img-top" src="/static/images/twitter_map.png" alt="Twitter Map">
                                 </div>
                                 <p class="card-text">
-                                    Work with a team to develop a visualization for Tweets through the USA. Source tweets 
-                                    through a 1% hose and formatted using Bing’s geocoding API. Tags can be selected by 
-                                    the user from a database propagated list. Tweets are then mapped using D3.js on a map 
-                                    of the USA with the ability to hover to view content. A graph showing sentiment 
-                                    analysis of the tweets is also displayed.
+                                    This started as a final project for UVM's Software Engineering course. I worked with
+                                    a team of three to develop a visualization for Tweets throughout the USA. Tweets are 
+                                    sourced through a 1% hose and formatted using Bing’s geocoding API. Tags can be selected by 
+                                    the user from a list created from the database tags. Tweets are then mapped using D3.js on a map 
+                                    of the USA. Mousing over tweets shows the content of the tweet. A graph showing sentiment 
+                                    analysis of the tweets is also displayed to the side showing the positive or negative bias.
                                 </p>
                             </div>
                             <div class="card-footer">
@@ -65,16 +77,12 @@
                                 <div>
                                     <img class="card-img-top" src="#" alt="Form Image">
                                 </div>
-                                <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut 
-                                labore et dolore magna aliqua. Sed risus pretium quam vulputate dignissim suspendisse. Felis 
-                                eget nunc lobortis mattis aliquam faucibus purus in massa. Nec dui nunc mattis enim ut tellus. 
-                                Risus nec feugiat in fermentum posuere urna nec tincidunt. Sodales ut eu sem integer vitae. 
-                                Condimentum id venenatis a condimentum vitae sapien pellentesque habitant morbi. Lobortis 
-                                feugiat vivamus at augue eget arcu dictum varius duis. Eleifend quam adipiscing vitae proin 
-                                sagittis nisl rhoncus mattis rhoncus. Sagittis orci a scelerisque purus semper eget. Lorem 
-                                donec massa sapien faucibus et molestie ac. Porta non pulvinar neque laoreet suspendisse. 
-                                Aliquam malesuada bibendum arcu vitae elementum curabitur vitae nunc. Elit at imperdiet dui 
-                                accumsan sit amet nulla facilisi morbi.</p>
+                                <p class="card-text">
+                                    This was my second personal project. The goal was to create a simple web app to eliminate
+                                    the need for paper tickets for each work ticket through the winter. I knew I was in over my 
+                                    head for a professional project at the time, but I was able to learn a lot. I learned about 
+                                    database storage and SQL as well as setting up a Flask web framework. 
+                                </p>
                             </div>
                             <div class="card-footer">
                                 <form>

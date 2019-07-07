@@ -18,9 +18,18 @@
         <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js"></script>
         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js"></script>
 
+        <!-- Local Javascript static files -->
+        <script src="/static/layout.js"></script>
+
         <!-- Fonts from https://fonts.google.com -->
         <link href="https://fonts.googleapis.com/css?family=Viga&display=swap" rel="stylesheet">
 
+        <!-- Favicon setup -->
+        <link rel="shortcut icon" href="{{ url_for('static', filename='favicon.ico') }}">
+
+        {% block scripts %}
+
+        {% endblock %}
 
         <!-- TITLEBLOCK -->
         <title> Portfolio: {% block title %} {% endblock %} </title>
@@ -31,13 +40,13 @@
             <a class="navbar-brand" href="#">Portfolio</a>
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
                 <ul class="nav navbar-nav mr-auto">
-                    <li class="nav-item active">
+                    <li id="home" class="nav-item">
                         <a class="nav-link" href="/index">Home</a>
                     </li>
-                    <li class="nav-item">
+                    <li id="about" class="nav-item">
                         <a class="nav-link" href="/about">About</a>
                     </li>
-                    <li class="nav-item">
+                    <li id="projects" class="nav-item">
                         <a class="nav-link" href="/projects">Projects</a>
                     </li>
                 </ul>
