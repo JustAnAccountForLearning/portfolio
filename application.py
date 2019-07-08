@@ -1,7 +1,12 @@
 import os
 from flask import Flask, render_template
 
+# Configure application
 application = Flask(__name__, static_url_path="/static")
+application.secret_key = 'tRAuBw7POnhTaOF7KwndlyAJj3BL90xK' # Randomly generated key
+
+# Ensure templates are auto-reloaded
+application.config["TEMPLATES_AUTO_RELOAD"] = True
 
 
 @application.route('/')

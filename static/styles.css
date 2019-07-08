@@ -15,7 +15,12 @@ main {
     padding-bottom: 70px;
 }
 
-h1, h3, h4 {
+h1 {
+    font-family: 'Viga', sans-serif;
+    font-size: 4vw;
+}
+
+h3, h4 {
     font-family: 'Viga', sans-serif;
 }
 
@@ -36,6 +41,11 @@ footer {
 
 .btn-space {
     margin:3px;
+    -webkit-transition: all 0.25s ease-in-out;
+}
+
+.btn:hover {
+    -webkit-transform: scale(1.1);
 }
 
 .bg {
