@@ -12,7 +12,7 @@ body {
 
 main {
     flex-grow: 1;
-    padding-bottom: 70px;
+    padding-bottom: 15%;
 }
 
 h1 {
@@ -79,6 +79,15 @@ footer {
     padding-left: 10%;
     padding-top: 6%;
     padding-bottom: 15%;
+}
+
+.sit-low {
+    padding-right: 10%;
+    padding-left: 10%;
+    position: absolute;
+    bottom: 0;
+    margin-bottom: 20px;
+    margin-top: auto;
 }
 
 .footer {
