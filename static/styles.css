@@ -11,8 +11,9 @@ body {
 }
 
 main {
+    display: block;
     flex-grow: 1;
-    padding-bottom: 15%;
+    padding-bottom: 0;
 }
 
 h1 {
@@ -78,7 +79,7 @@ footer {
     padding-right: 10%;
     padding-left: 10%;
     padding-top: 6%;
-    padding-bottom: 15%;
+    padding-bottom: 0%;
 }
 
 .sit-low {
@@ -103,7 +104,7 @@ footer {
 }
 
 .dummy {
-    margin-top: 57%;
+    margin-top: 56%;
 }
 
 .fullscreen {
